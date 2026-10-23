@@ -1,0 +1,219 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.7;
+  color: #222;
+  background: #fff;
+}
+
+/* ===== Шапка ===== */
+header {
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #2c7be5;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #1a3d6d;
+  margin: 0 0 8px;
+}
+
+/* ссылка «← Все темы» / «← На главную» */
+.back,
+header a {
+  font-size: 0.9rem;
+  color: #2c7be5;
+  text-decoration: none;
+}
+
+.back:hover,
+header a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Оглавление на главной ===== */
+.topics {
+  list-style: none;
+  padding: 0;
+}
+
+.topics li {
+  margin: 12px 0;
+}
+
+.topics a {
+  display: block;
+  padding: 14px 18px;
+  background: #f0f4fa;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1a4d8f;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.topics a:hover {
+  background: #dce7f7;
+  transform: translateX(4px);
+}
+
+/* ===== Секции тем ===== */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #1a3d6d;
+  border-left: 4px solid #2c7be5;
+  padding-left: 12px;
+  margin-top: 0;
+}
+
+section h3 {
+  color: #2c5aa0;
+  margin-top: 24px;
+}
+
+/* ===== Абзацы и списки ===== */
+p {
+  margin: 12px 0;
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+
+/* ===== Кнопка-ссылка на источник ===== */
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #2c7be5;
+  color: #fff !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #1a5cb8;
+}
+
+/* ===== Футер ===== */
+footer {
+  margin-top: 50px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer a {
+  color: #2c7be5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Задачи (если будешь оформлять карточками) ===== */
+.task {
+  border: 1px solid #e0e6ee;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background: #fafcff;
+}
+
+.task .answer {
+  font-weight: 600;
+  color: #1a7f37;
+}
+
+/* ===== Скрытие решения (для кнопки «Показать решение») ===== */
+.hidden {
+  display: none;
+}
+
+/* ===== Мобильная адаптация ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 14px;
+    font-size: 15px;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.answer {
+  color: rgb(25, 74,189);
+  font-weight: 600;
+}
+/* важное замечание */
+.note {
+  color: rgb(25, 74, 189);
+}
+
+/* формула/код */
+.formula {
+  color: #1a4d8f;
+  font-family: "Cambria Math", serif;
+}
+
+/* приглушённый текст */
+.muted {
+  color: #777;
+}
+
+.big {
+  font-size: 1.25rem;
+}
+.small {
+  font-size: 0.85rem;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e6ee;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #f0f4fa;
+  color: #1a4d8f;
+  border-radius: 999px;          /* таблетка */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.15s;
+}
+
+footer a:hover {
+  background: #dce7f7;
+  transform: translateX(-3px);   /* лёгкий сдвиг влево — намёк «назад» */
+}
+
+img {
+  max-width: 100%;
+}
