@@ -79,7 +79,7 @@ section h2 {
 }
 
 section h3 {
-  color: #2c5aa0;
+  color: #1a3d6d;
   margin-top: 24px;
 }
 
@@ -165,12 +165,12 @@ footer a:hover {
 }
 
 .answer {
-  color: rgb(25, 74,189);
+  color: rgb(35, 55, 101);
   font-weight: 600;
 }
 /* важное замечание */
 .note {
-  color: rgb(25, 74, 189);
+  color: rgb(58, 86, 147);
 }
 
 /* формула/код */
@@ -216,4 +216,67 @@ footer a:hover {
 
 img {
   max-width: 100%;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: 1px solid #e0e6ee;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  padding: 10px 14px;
+  font-weight: 600;
+  color: #2c5aa0;
+  background: #f0f4fa;
+  border-bottom: 1px solid #e0e6ee;
+}
+
+th,
+td {
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #eef2f7;
+}
+
+th {
+  background: #f0f4fa;
+  color: #1a3d6d;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafcff;
+}
+
+tbody tr:hover {
+  background: #eaf2fd;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td.num,
+th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+table.compact th,
+table.compact td {
+  padding: 6px 10px;
+  font-size: 0.9rem;
 }
